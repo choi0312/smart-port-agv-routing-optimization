@@ -1,0 +1,41 @@
+project:
+  name: smart_port_agv_routing_optimization
+  seed: 42
+  output_dir: outputs
+
+data:
+  task_path: data/raw/task.csv
+  agv_path: data/raw/agv.csv
+
+objective:
+  lambda_score: 2.0
+  lambda_search: 1.0
+
+initial_solution:
+  sort_by: deadline
+
+alns:
+  iterations: 40000
+  remove_count: 15
+  temperature_initial: 1000.0
+  temperature_min: 5.0
+  high_temp_threshold: 50.0
+  cooling_high: 0.9998
+  cooling_low: 0.9999
+  local_search_interval_high_temp: 20
+
+parallel:
+  enabled: true
+  num_workers: 8
+  seeds:
+    - 42
+    - 123
+    - 999
+    - 2025
+    - 415
+    - 1101
+    - 505
+    - 808
+
+submission:
+  filename: submission.csv

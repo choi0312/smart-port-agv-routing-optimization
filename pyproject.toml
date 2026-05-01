@@ -1,0 +1,12 @@
+[project]
+name = "smart-port-agv-routing-optimization"
+version = "0.1.0"
+description = "ALNS-based smart port AGV routing optimization pipeline."
+readme = "README.md"
+requires-python = ">=3.10"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.black]
+line-length = 100
