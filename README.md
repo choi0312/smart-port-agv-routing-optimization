@@ -51,7 +51,7 @@ score = total_travel_time + total_service_time + lambda * total_lateness
 | Local Search | 2-opt, relocate, swap, cross-exchange |
 | Acceptance | simulated annealing 기반 확률적 수용 |
 | Multi-seed | 여러 seed를 병렬 실행한 뒤 최적해 선택 |
-| Submission | AGV별 route를 DACON 제출 형식으로 저장 |
+| Submission | AGV별 route를 제출 형식으로 저장 |
 
 ## 5. 저장소 구조
 
