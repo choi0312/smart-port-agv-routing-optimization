@@ -2,16 +2,17 @@
 
 스마트 항만 환경에서 AGV가 주어진 작업을 제한 시간 내에 효율적으로 수행하도록 경로를 최적화하는 휴리스틱 최적화 프로젝트입니다.
 
+> 해양수산부에서 주최한 **스마트 항만 AGV 경로 최적화 경진대회**에 참가하여 예선 리더보드 **6위**를 기록한 프로젝트입니다.  
+> Competition: https://dacon.io/competitions/official/236592/leaderboard
 
-## Competition Result
+## 1. 문제 정의
 
-| 항목 | 내용 |
-|---|---|
-| 대회명 | 스마트 해운물류 x AI 미션 챌린지 : 스마트 항만 AGV 경로 최적화 경진대회 |
-| 문제 유형 | 정형 최적화, AGV Routing, VRP/TSP 변형 |
-| 성과 | 예선 리더보드 6등 |
-| 최종 점수 | 12,563 |
-| 대회 링크 | https://dacon.io/competitions/official/236592/leaderboard |
+입력 데이터는 작업 정보와 AGV 사양으로 구성됩니다.
+
+- `task.csv`: 작업 ID, 좌표, 서비스 시간, 수요량, deadline
+- `agv.csv`: AGV ID, 이동 속도, 최대 주행거리, 적재 용량
+
+목표는 모든 작업을 AGV 경로에 배정하면서 총 이동시간, 서비스 시간, deadline 지연 패널티를 최소화하는 것입니다.
 
 ## 1. 문제 정의
 
